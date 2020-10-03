@@ -4,23 +4,54 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SURJ - I Pledge to Defend the Election</title>
+
+    <meta
+      property="og:title"
+      content="SURJ - I Pledge to Defend the Election"
+    />
+    <meta property="og:description" content="" />
+    <meta
+      property="og:image"
+      content="http://surj-ed-pledge.netlify.app/images/vote-with-vision-defend-the-election.png"
+    />
+
     <link
       href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
       rel="stylesheet"
     />
   </head>
-  <body class="bg-gray-200 p-5">
-    <div class="container max-w-md mx-auto">
-      <h1 class="text-4xl text-center">SURJ</h1>
-      <h2 class="text-2xl text-center">I Pledge to Defend the Election</h2>
-      <ul class="flex flex-col mt-5">
-        <li class="flex-1">
-          <a class="text-center block border border-orange-500 rounded py-2 px-4 bg-orange-500 hover:bg-orange-700 text-white" href="election-defender.html">Election Defender</a>
-        </li>
-        <li class="flex-1 mt-2">
-          <a class="text-center block border border-orange-500 rounded py-2 px-4 bg-orange-500 hover:bg-orange-700 text-white" href="election-official.html">Election Official</a>
-        </li>
-      </ul>
+  <body class="bg-gray-200 my-5">
+    <div class="container mx-auto mt-10 max-w-3xl bg-white p-6 shadow rounded">
+      <div class="header">
+        <img
+          src="images/vote-with-vision-defend-the-election.png"
+          class="w-full"
+          alt="Vote with Vision, Defend the Election"
+        />
+      </div>
+      <div class="content mt-6">
+        <ul class="flex flex-col mt-5">
+          <li class="flex-1">
+            <a
+              class="text-center block border border-orange-500 rounded py-2 px-4 bg-orange-500 hover:bg-orange-700 text-white text-2xl"
+              href="election-defender.html"
+              >Election Defender</a
+            >
+          </li>
+          <li class="flex-1 mt-2">
+            <a
+              class="text-center block border border-orange-500 rounded py-2 px-4 bg-orange-500 hover:bg-orange-700 text-white text-2xl"
+              href="election-official.html"
+              >Election Official</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="footer"></div>
     </div>
+
+    <p class="text-center text-gray-500 text-xs mt-3">
+      &copy;2020 Showing Up for Racial Justice. All rights reserved.
+    </p>
   </body>
 </html>

@@ -30,8 +30,8 @@
     ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fetch/3.4.1/fetch.min.js"></script>
   </head>
-  <body class="bg-gray-200 my-5">
-    <div class="container mx-auto mt-10 max-w-3xl bg-white p-6 shadow rounded">
+  <body class="bg-gray-200 my-3 md:my-6">
+    <div class="container mx-auto max-w-3xl bg-white p-6 shadow rounded">
       <div class="header">
         <img
           src="images/vote-with-vision-defend-the-election.png"
@@ -187,7 +187,7 @@
             </div>
           </div>
           <div class="flex flex-wrap -mx-3 mt-2">
-            <div class="w-full px-3">
+            <div class="w-full md:w-1/2 px-3">
               <label
                 class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
                 for="email"
@@ -202,6 +202,57 @@
                 placeholder="jane@example.com"
                 required
               />
+            </div>
+            <div class="w-full md:w-1/2 px-3">
+              <label
+                class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                for="title"
+              >
+                Title
+              </label>
+              <div class="relative">
+                <select
+                  class="block appearance-none w-full bg-gray-200 border border-gray-500 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                  id="title"
+                  name="title"
+                  required
+                >
+                  <option value="" selected="selected">Select your Title</option>
+                  <option value="Administrator">Administrator</option>
+                  <option value="Chairman">Chairman</option>
+                  <option value="Chief Election Officer">Chief Election Officer</option>
+                  <option value="Co-Director">Co-Director</option>
+                  <option value="Commissioner">Commissioner</option>
+                  <option value="Commissioner of Elections">Commissioner of Elections</option>
+                  <option value="Deputy Commissioner of Elections">Deputy Commissioner of Elections</option>
+                  <option value="Deputy Secretary of State">Deputy Secretary of State</option>
+                  <option value="Director">Director</option>
+                  <option value="Director and Legal Counsel">Director and Legal Counsel</option>
+                  <option value="Director of Elections">Director of Elections</option>
+                  <option value="Elections Director">Elections Director</option>
+                  <option value="Executive Director">Executive Director</option>
+                  <option value="Lieutenant Governor">Lieutenant Governor</option>
+                  <option value="Secretary">Secretary</option>
+                  <option value="Secretary of State">Secretary of State</option>
+                  <option value="Secretary of the Commonwealth">Secretary of the Commonwealth</option>
+                  <option value="Secretary of the State">Secretary of the State</option>
+                  <option value="State Election Commissioner">State Election Commissioner</option>
+                  <option value="Supervisor of Elections">Supervisor of Elections</option>
+                </select>
+                <div
+                  class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700"
+                >
+                  <svg
+                    class="fill-current h-4 w-4"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
+                    />
+                  </svg>
+                </div>
+              </div>
             </div>
           </div>
           <div class="flex flex-wrap -mx-3 mt-2">
